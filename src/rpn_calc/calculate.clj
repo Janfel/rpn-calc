@@ -8,7 +8,7 @@
 
 (defn- num-fn
   "Wraps a number in an arity 1 function."
-  [num] (fn [_] num))
+  [num] (fn [] num))
 
 (defn- parse-num-fn
   "Parses a number from a string and wraps it like num-fn."
@@ -22,3 +22,8 @@
              "+" [+ 2]
              "-" [- 2]
              [(parse-num-fn input) 0])))
+
+(defn compute
+  "Reduces a sequence of rpn symbols to its numerical value."
+  [symbols]
+  (reduce #((evaluate %2) %1) [] symbols))
