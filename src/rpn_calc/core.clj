@@ -1,7 +1,8 @@
 (ns rpn-calc.core
-  (:gen-class))
+  (:gen-class)
+  (:require [rpn-calc.calculate :as calc]))
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Calculates the numeric value of the passed rpn expression."
   [& args]
-  (println args))
+  (run! println (calc/compute-str (first args))))
