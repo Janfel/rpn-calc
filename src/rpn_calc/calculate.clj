@@ -5,7 +5,7 @@
   "Pops the given number of arguments from the stack and pushes the result from applying func on them."
   [[func arity] stack]
   (let [[head tail] (split-at arity stack)]
-    (conj tail (apply func head))))
+    (conj tail (apply func (reverse head)))))
 
 (defn evaluate
   "Evaluates input as a rpn symbol and returns a function that manipulates the number stack accordingly."
