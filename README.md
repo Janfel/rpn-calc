@@ -1,32 +1,28 @@
 # rpn-calc
 
-FIXME: description
+A simple rpn calculator written in Clojure.
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Download from the releases page.
 
 ## Usage
 
-FIXME: explanation
+Pass a rpn expression as the first argument.
 
-    $ java -jar rpn-calc-0.1.0-standalone.jar [args]
+```bash
+    java -jar rpn-calc-0.1.0-standalone.jar "2 4 +"
+```
+
+rpn-calc can return multiple results.
+
+```bash
+    java -jar rpn-calc-0.1.0-standalone.jar "2 4 + 6 8 +"
+```
 
 ## Options
 
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+Planned for future release.
 
 ## License
 
