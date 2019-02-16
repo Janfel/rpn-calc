@@ -24,4 +24,4 @@
 (defn compute-str
   "Splits a string and computes its values like compute."
   [input]
-  (compute (str/split input #"\s")))
+  (compute (str/split input #"\s+")))
