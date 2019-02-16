@@ -14,6 +14,8 @@
            (case input
              "+" [+ 2]
              "-" [- 2]
+             "*" [* 2]
+             "/" [/ 2]
              [#(Double/parseDouble input) 0])))
 
 (defn compute
